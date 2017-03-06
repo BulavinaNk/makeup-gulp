@@ -81,6 +81,41 @@ header a:last-child{
 	border: 2px solid $darkGrey;
 	cursor: pointer;
 }
+.block-radio{
+	position: relative;
+	margin-top: -160px;
+	margin-left: 100px;
+}
+.circle{
+  background: #d35b7f;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;  
+  margin: 8px 8px;
+  cursor: pointer;
+  
+}
+
+
+.circle3{
+  width: 26px;
+  height: 26px;
+  border: 2px solid #f6f5f3;
+  border-radius: 40px;
+ 
+}
+.circle2{
+  width: 26px;
+  height: 26px;
+  border: 2px solid #d35b7f;
+  border-radius: 40px;
+  
+ 
+}
+input[type=radio]{
+   width: 24px;
+  height: 24px;
+}
 .popular{
 	@include windows-size;
 	height: 70vh;
@@ -131,6 +166,7 @@ header a:last-child{
 	width: 440px;
 	height: 250px;
 	padding: 40px 20px;	
+	position: relative;
 }
 .category-insta-photo{
 	margin-top: 50px;
@@ -141,6 +177,18 @@ header a:last-child{
 }
 .category-insta-photo img:last-child{
 	margin-right: 0px;
+}
+.category-insta a i{
+	color: #333333;
+	position: relative;
+    float: right;
+    top: -70px;
+}
+.category-twitter a i{
+	color: #333333;
+	position: relative;
+    float: right;
+    top: -70px;
 }
 .category-title{
 	font-size: 1.3em;
@@ -242,19 +290,18 @@ header a:last-child{
 	font-weight: bold;
 	font-family:  Calibri, sans-serif;
 }
-.contaner input{
-	
-	height: 40px;
+.contaner input{	
+	height: 50px;
 	border: 0px;
 }
 .contaner input[type=text]{
 	margin-left: 300px;
-	width: 350px;
+	width: 290px;
+	padding:0 30px;
 }
-.contaner-maincat {
-	
+.contaner-maincat {	
 	margin-top: 240px;
-
+	text-align: center;
 }
 .contaner-maincat a{
 	color: #5f5f5f;
@@ -265,6 +312,12 @@ header a:last-child{
 
 
 }
+
+.contaner-maincat a i{
+	float: right;
+	margin-left: 30px;
+}
+
 .contaner input[type=button]{
 	width: 90px;
 	background: #d35b7f;
@@ -282,8 +335,62 @@ header a:last-child{
 }
 .bottom a{
 	color: #5f5f5f;
-	margin-right: 30px;
+	margin-right: 40px;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family:  Calibri, sans-serif;
 }
 .bottom a:last-child{
 	float: right;
+	margin-right: 0px;
 }
+.icon-twitter{
+	color: #51abea;
+}
+.icon-instagram {
+	color: #fff;
+}
+.icon-facebook{
+	color: #fff;
+}
+
+
+
+     
+     
+    .demo-icon
+    {
+
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
